@@ -1,0 +1,35 @@
+.finalButtonSpace{
+    display:flex;
+    justify-content:center;
+}
+
+.wasteMuch{
+    display:none;
+}
+
+.wasteLittle{
+    display:none;
+}
+
+.header{
+    text-align:center;
+}
+
+body{
+     background-image: url("https://media.giphy.com/media/l4FGFE9n1nHFagC0E/giphy.gif");
+     background-repeat: no-repeat;
+     font-family: 'Coming Soon', cursive;
+}
+.resultComment{
+    display:flex;
+    justify-content:center;
+}
+
+button{
+    font-family: 'Coming Soon', cursive;
+}
+
+.result{
+     display:flex;
+    justify-content:center;
+}
