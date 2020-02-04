@@ -1,6 +1,7 @@
 let firstAnswer;
 let secondAnswer;
 let thirdAnswer;
+let name;
 let total;
 let week=7;
 
@@ -21,14 +22,19 @@ $(".buttonThree").click(function(){
    
 });
 
+$(".buttonZero").click(function(){
+    name=$(".answerZero").val();
+   
+});
+
 $(".calTotal").click(function(){
       total= (Number(firstAnswer) + Number(secondAnswer) + Number(thirdAnswer))*week;
       if(total>=25){
-          $(".result").html(`You'll waste ${total} hours this week! What is you doin?`);
+          $(".result").html(`${name},you'll waste ${total} hours this week! What is you doin?`);
           $(".wasteMuch").show();
       }
       else{
-          $(".result").html(`<p>You'll waste just ${total} hours this week! You have your priorities straight! Look at you!</p>`);
+          $(".result").html(`<p>${name},   you'll waste just ${total} hours this week! You have your priorities straight! Look at you!</p>`);
           $(".wasteLittle").show();
       }
       
